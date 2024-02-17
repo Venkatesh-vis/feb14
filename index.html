@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Responsive</title>
+    <style>
+         .ch{
+                background-color: aqua;
+        }
+        @media screen and (min-width:400px) and (max-width:720px) {
+            .par {
+                display: grid;
+                height: 600px;
+                width: 700px;
+                gap: 10px;
+            }
+
+            .ch {
+                background-color: brown;
+
+            }
+
+            .ch1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-color: yellow;
+            }
+
+            .ch2 {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                background-color: violet;
+            }
+
+            .ch3 {
+                background-color: antiquewhite;
+            }
+
+            .ch5 {
+                background-color: blue;
+            }
+
+            .ch4 {
+                grid-row-start: 3;
+                grid-row-end: 5;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                background-color: orange;
+            }
+
+            .ch6 {
+                background-color: turquoise;
+            }
+
+            .ch7 {
+                background-color: thistle;
+                grid-row-start: 6;
+                grid-row-end: 8;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            .ch9 {
+                background-color: burlywood;
+            }
+
+            .ch10 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-color: chartreuse;
+            }
+
+        }
+
+        .par {
+            display: grid;
+            gap: 10px;
+        }
+       
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="par">
+        <div class="ch ch1">Role</div>
+        <div class="ch ch2">First Name</div>
+        <div class="ch ch3">Second Name</div>
+        <div class="ch ch4">Address</div>
+        <div class="ch ch5">Highest Qualification</div>
+        <div class="ch ch6">Experience</div>
+        <div class="ch ch7">Feedback</div>
+        <div class="ch ch8">E-Mail</div>
+        <div class="ch ch9">Mobile</div>
+        <div class="ch ch10">Submit</div>
+
+    </div>
+</body>
+
+</html>
